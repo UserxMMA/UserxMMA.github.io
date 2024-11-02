@@ -1,0 +1,158 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Franklin Delano Roosevelt</title>
+    <style>
+        body {
+            background-color: #f0e5d8;
+            font-family: 'Arial', Arial;
+            color: #ffffff;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            background-color: #12a9b7;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            background-color: #18cad3;
+            border: 2px solid #8b5a2b;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 20px 0 10px;
+            color: #ffffff;
+            border-bottom: 2px solid #8b5a2b;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .button {
+            background-color: #17c4bb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            cursor: pointer;
+            margin-top: 15px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #6f4c3e;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #5c3a2e;
+            border-top: 1px solid #8b5a2b;
+            padding-top: 20px;
+        }
+
+        /* Estilo del botón "Ir arriba" */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #17c4bb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: none; /* Inicialmente oculto */
+            transition: background-color 0.3s;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #17c4bb;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Instituto Franklin Delano Roosevelt</h1>
+    </header>
+
+    <div class="section">
+        <h2>Quiénes somos?</h2>
+        <p>El Instituto Franklin Delano Roosevelt es una institución educativa dedicada a la formación integral de sus estudiantes, ofreciendo programas de alta calidad y un ambiente de aprendizaje enriquecedor.</p>
+    </div>
+
+    <div class="section">
+        <h2>Contáctanos</h2>
+        <p>Estamos aquí para ayudarte.</p>
+        <h2>Matrículas</h2>
+        <p>Para más información sobre matrículas, por favor contáctanos a través del siguiente correo:</p>
+        <p class="email">fdrptocortes@gmail.com</p>
+        
+        <h2>Quejas</h2>
+        <p>Si tienes alguna queja, no dudes en escribirnos. Tu opinión es importante para nosotros.</p>
+    </div>
+
+        <a href="mailto:fdrptocortes@gmail.com" class="button">Enviar Correo</a>
+    </div>
+
+    <footer>
+        <p>¡Esperamos tu mensaje!</p>
+    </footer>
+
+    <!-- Botón "Ir arriba" -->
+    <a href="#" class="scroll-to-top" id="scrollToTop">↑ Ir arriba</a>
+
+    <script>
+        // Mostrar/ocultar el botón "Ir arriba"
+        window.onscroll = function() {
+            const button = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Función para desplazarse hacia arriba
+        document.getElementById("scrollToTop").onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+    </script>
+
+</body>
+</html>
