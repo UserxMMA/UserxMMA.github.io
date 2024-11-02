@@ -1,0 +1,79 @@
+.container {
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos la altura de la pantalla */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0037ff42; /* Fondo Blanco */
+    box-shadow: 0 0 10px #0d77c33b;
+    display: flex;
+    flex-direction: column; /* Alinea las secciones verticalmente */
+}
+
+nav {
+    background-color: #a86519; /* Negro */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffffef;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #cd7f31; /* Azul claro al pasar el mouse */
+    border-radius: 5px;
+}
+
+/* Sección de promoción */
+.promocion-grid-2024 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Limita a 5 columnas */
+    gap: 70px; /* Espacio entre los elementos */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.promocion-item-2024 {
+    position: relative;
+    width: 150px;
+    height: 220px; /* Aumentamos la altura para más espacio */
+    cursor: pointer;
+    text-align: center;
+}
+
+.promocion-item-2024 img {
+    width: 100%;
+    height: 150px; 
+    border-radius: 50%;
+    transition: transform 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promocion-item-2024:hover img {
+    transform: scale(1.1); /* Efecto de acercamiento en la imagen */
+}
+
+.promocion-item-2024 p {
+    margin-top: 0px; /* Aumentamos la separación entre la imagen y el texto */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0; /* El texto es invisible inicialmente */
+    transition: opacity 0.3s ease; /* Transición suave para el texto */
+}
+
+.promocion-item-2024:hover p {
+    opacity: 1; /* El texto aparece cuando se hace hover */
+}
