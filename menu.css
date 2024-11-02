@@ -32,15 +32,11 @@ h1 {
 
 .imagen {
     width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    text-align: center; /* Centra la imagen */
 }
 
 .imagen img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    width: 70%; /* La imagen ocupará el 70% del ancho del contenedor */
     height: auto; /* Mantiene la relación de aspecto */
 }
 
@@ -90,7 +86,7 @@ h2 {
 }
 
 video {
-    max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
+    max-width: 70%; /* Ajusta el ancho del video */
     height: auto;
 }
 
@@ -105,18 +101,41 @@ footer {
 }
 
 /* Media Queries para Responsividad */
+@media (max-width: 576px) {
+    /* Estilos para dispositivos móviles */
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 5px 0; /* Ajusta espaciado entre elementos del menú en móviles */
+    }
+    
+    .imagen img {
+        width: 90%; /* Reduce la imagen en móviles */
+    }
+    
+    video {
+        max-width: 90%; /* Reduce el tamaño del video en móviles */
+    }
+    
+    .container {
+        padding: 15px;
+    }
+}
+
 @media (min-width: 768px) {
     /* Estilos para tablets y pantallas más grandes */
     .container {
         padding: 30px;
     }
     
-    .imagen {
-        width: 70%;
+    .imagen img {
+        width: 70%; /* Ajusta el ancho de la imagen */
     }
     
     video {
-        max-width: 70%;
+        max-width: 70%; /* Ajusta el ancho del video */
     }
 }
 
@@ -126,30 +145,11 @@ footer {
         padding: 40px;
     }
     
-    .imagen {
-        width: 50%;
-    }
-    
-    video {
-        max-width: 50%;
-    }
-}
-
-@media (max-width: 576px) {
-    /* Estilos para dispositivos móviles */
-    nav ul {
-        flex-direction: column;
-    }
-    
     .imagen img {
-        width: 100%; /* Ajusta imagen al ancho completo en dispositivos pequeños */
-    }
-    
-    .container {
-        padding: 15px;
+        width: 50%; /* Ajusta el ancho de la imagen en pantallas grandes */
     }
     
     video {
-        max-width: 100%;
+        max-width: 50%; /* Ajusta el ancho del video en pantallas grandes */
     }
 }
