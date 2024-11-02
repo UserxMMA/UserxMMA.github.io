@@ -31,7 +31,7 @@ h1 {
 }
 
 .imagen {
-    width: 50%; /* Ocupa el 100% del ancho del contenedor */
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
     img {
         display: block;
         margin-left: auto;
@@ -40,13 +40,12 @@ h1 {
 }
 
 .imagen img {
-    width: 50%; /* La imagen ocupará el 100% del ancho del contenedor */
-    width: 50%;
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
     height: auto; /* Mantiene la relación de aspecto */
 }
 
 nav {
-    background-color: #1694ce; /* Negro */
+    background-color: #1694ce; /* Azul oscuro */
 }
 
 nav ul {
@@ -55,6 +54,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -90,7 +90,7 @@ h2 {
 }
 
 video {
-    max-width: 50%; /* Asegura que el video no exceda el ancho del contenedor */
+    max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
     height: auto;
 }
 
@@ -102,4 +102,54 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Media Queries para Responsividad */
+@media (min-width: 768px) {
+    /* Estilos para tablets y pantallas más grandes */
+    .container {
+        padding: 30px;
+    }
+    
+    .imagen {
+        width: 70%;
+    }
+    
+    video {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Estilos para laptops y desktops */
+    .container {
+        padding: 40px;
+    }
+    
+    .imagen {
+        width: 50%;
+    }
+    
+    video {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Estilos para dispositivos móviles */
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .imagen img {
+        width: 100%; /* Ajusta imagen al ancho completo en dispositivos pequeños */
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    video {
+        max-width: 100%;
+    }
 }
