@@ -24,8 +24,8 @@ ul {
 
 #instalaciones-logros {
     background-color: #dd581a;
-    padding: 40px;
-    margin: 40px auto;
+    padding: 20px;
+    margin: 20px auto;
     max-width: 1200px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -40,25 +40,26 @@ ul {
 
 .descripcion {
     text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
     color: #ffffff;
 }
 
 /* Sección Instalaciones */
 .seccion-instalaciones {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .instalaciones-contenido {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
 }
 
 .instalacion-item {
-    width: 30%;
+    width: 100%;
+    max-width: 30%;
     background-color: #504343f7;
     border-radius: 10px;
     overflow: hidden;
@@ -78,48 +79,50 @@ ul {
 }
 
 .instalacion-item h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 15px 0;
 }
 
 .instalacion-item p {
-    padding: 0 20px 20px;
+    padding: 0 15px 15px;
 }
 
 /* Sección Logros */
 .seccion-logros ul {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .seccion-logros ul li {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    margin-bottom: 10px;
     color: #f1f1f1;
 }
 
 /* Galería */
 .galeria {
-    margin: 60px 0;
+    margin: 40px 0;
     color: #f1f1f1;
 }
 
 .galeria-imagenes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .galeria-imagenes img {
-    width: 45%;
+    width: 100%;
+    max-width: 45%;
     border-radius: 10px;
     box-shadow: 0 4px 15px #000000;
 }
 
 /* Bloque de Cita */
 blockquote {
-    margin: 40px auto;
+    margin: 20px auto;
     max-width: 800px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #f6f6f6;
     font-style: italic;
     text-align: center;
@@ -129,10 +132,10 @@ blockquote {
 .boton-contacto {
     display: inline-block;
     margin: 20px auto;
-    padding: 15px 30px;
+    padding: 10px 20px;
     background-color: #34aedb;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -140,4 +143,40 @@ blockquote {
 
 .boton-contacto:hover {
     background-color: #b9ad29;
+}
+
+/* Responsivo para dispositivos móviles */
+@media (max-width: 768px) {
+    #instalaciones-logros {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .descripcion {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .instalaciones-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instalacion-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .galeria-imagenes img {
+        width: 100%;
+    }
+
+    blockquote {
+        font-size: 0.9rem;
+    }
+
+    .boton-contacto {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
