@@ -1,0 +1,105 @@
+html, body {
+    height: 100%; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0a6ab4; /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos la altura de la pantalla */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0037ff42; /* Fondo Blanco */
+    box-shadow: 0 0 10px #0d77c33b;
+    display: flex;
+    flex-direction: column; /* Alinea las secciones verticalmente */
+}
+
+.imagen {
+    width: 50%; /* Ocupa el 100% del ancho del contenedor */
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.imagen img {
+    width: 50%; /* La imagen ocupará el 100% del ancho del contenedor */
+    width: 50%;
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+nav {
+    background-color: #1694ce; /* Negro */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffffef;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #0073e6; /* Azul claro al pasar el mouse */
+    border-radius: 5px;
+}
+
+section {
+    background-color: #eaeaea; /* Color gris claro para cada sección */
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #003366; /* Azul oscuro */
+}
+
+.video {
+    padding: 20px;
+    text-align: center;
+}
+
+video {
+    max-width: 50%; /* Asegura que el video no exceda el ancho del contenedor */
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
